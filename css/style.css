@@ -99,12 +99,12 @@ nav label,
   align-items: flex-start;
   width: 100%;
   height: 72vh;
-  flex-grow: 1;
+
   background-image: url(/images/A3-1920.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin: 0;
+
 }
 
 h1 {
@@ -141,12 +141,13 @@ h1 {
   border-radius: 30px;
   text-decoration: none;
   padding: 10px 10px;
-  font-weight: 800;
-  width: 34%;
+  font-weight: 700;
+  max-width: 210px;
+  transition: background-color 0.5s;
 }
 
 .btn:hover {
-  background-color: white;
+  background-color: rgb(255, 254, 254);
 }
 
 /* =======page formation======= */
@@ -167,6 +168,7 @@ h1 {
   padding: 15px;
   margin: 10px;
   border: black solid 1px;
+  background-color: #e2e1e1;
 }
 
 /* ========témoignages========= */
@@ -174,8 +176,14 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  min-height: 72vh;
+  min-height: 70vh;
 }
+
+h3 {
+  width: 100%;
+  text-align: center;
+}
+
 
 .temoignage {
   display: flex;
@@ -190,7 +198,8 @@ h1 {
 }
 
 .texte {
-  line-height: 1.5;
+  line-height: 2;
+  font-weight: bold;
 
 }
 
@@ -201,7 +210,7 @@ h1 {
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  min-height: 74vh;
+  min-height: 72vh;
   background-image: url(/images/A2-1920.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -233,14 +242,14 @@ form {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  min-height: auto;
+  min-height: 50vh;
   width: 100%;
   padding: 0;
   margin: 10px;
 }
 
 fieldset {
-  min-width: 35%;
+  min-width: 25%;
 
 }
 
@@ -251,6 +260,74 @@ fieldset {
   padding: 5px;
 
 
+}
+
+.votresituation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 35%;
+  min-height: 5vh;
+
+}
+
+.situation {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+  align-items: center;
+  width: 35%;
+
+}
+
+.situation label {
+  flex: 1;
+  margin-right: 15px;
+
+
+}
+
+.situation input[type="radio"] {
+  flex-shrink: 0;
+  /* empêche le radio de se compresser */
+}
+
+.vosmodalite {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 35%;
+  min-height: auto;
+
+
+}
+
+.modalite {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 35%;
+
+}
+
+.modalite label {
+  flex: 1;
+
+  margin-right: 15px;
+
+
+}
+
+.region {
+  min-height: auto;
+}
+
+.button {
+  min-height: auto;
 }
 
 
@@ -354,8 +431,8 @@ fieldset {
   #toggle:checked~nav ul li {
     display: flex;
     justify-content: center;
-    width: 20vw;
-    background-color: #94c33d;
+    width: 30vw;
+    background-color: #ffffff;
     padding: 10px;
 
 
@@ -364,15 +441,16 @@ fieldset {
   #toggle:checked~nav ul li a {
     background-color: transparent;
     border-radius: 0;
-    color: #ffffff;
+    color: #94c33d;
     margin: 0;
     padding: 0;
+    transition: background-color 0.5s;
   }
 
   #toggle:checked~nav ul li a:hover {
-    background-color: rgb(204, 198, 198);
+    background-color: rgb(207, 205, 205);
     border-radius: 8px;
-    width: 100%;
+    width: auto;
 
   }
 
@@ -398,8 +476,9 @@ fieldset {
     width: 100%;
   }
 
-  .btn {
-    min-width: 34%;
+  .form {
+    height: auto;
   }
+
 
 }
