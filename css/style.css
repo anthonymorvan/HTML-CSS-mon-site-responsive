@@ -1,15 +1,21 @@
+@import "typography.css";
+
+* {
+  font-family: 'Gotham', sans-serif;
+  margin: 0;
+}
+
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  font-family: roboto;
 }
 
 header {
   width: 100%;
   margin: auto;
   height: 10vh;
-  background-color: #04730a;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -23,11 +29,9 @@ header img {
 main {
   display: flex;
   flex-wrap: wrap;
-  background-color: rgb(177, 231, 218);
-  align-items: center;
   flex-grow: 1;
-  width: 90%;
-  padding: 10px;
+  width: 100%;
+  height: auto;
   margin: auto;
 }
 
@@ -38,24 +42,24 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(8, 46, 17);
-  color: white;
+  background-color: #94c33d;
+  color: black;
 }
 
 nav {
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 25px;
+
   width: 100%;
   height: 10vh;
-  background: #29703b;
+  background: #94c33d;
   font-family: Arial, sans-serif;
   margin: 0;
 }
 
 nav ul {
   display: flex;
-  background: #438048;
+  background: #94c33d;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -68,52 +72,246 @@ nav li {
 
 nav li a {
   text-decoration: none;
-  color: white;
-  padding: 10px 40px;
+  color: #000000;
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  font-size: 16px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background-color 0.5s;
 }
 
-nav li:hover {
-  background-color: rgb(45, 69, 19);
+nav li a:hover {
+  background-color: rgb(204, 198, 198);
 }
 
-label,
+nav label,
 #toggle {
   display: none;
 }
 
-.box {
-  width: 20%;
-  height: 20%;
-  margin: auto;
-  background-color: rgb(7, 189, 7);
-  text-align: center;
-}
+/* ======Accueil==== */
 
 .container {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 72vh;
+  flex-grow: 1;
+  background-image: url(/images/A3-1920.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+h1 {
+  display: flex;
+  width: 100%;
   justify-content: center;
-  flex-wrap: wrap;
+  align-items: center;
+  background-color: rgb(70, 138, 201);
+  height: 8vh;
+  padding: 0;
+  margin: 0em;
+}
+
+
+
+.titreh2btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 40%;
-  height: 50vh;
-  background-color: aliceblue;
-  margin: 5px auto;
-  border-radius: 10px;
+  height: 80vh;
+  gap: 20%;
+  padding-left: 10%;
+
+}
+
+.titreh2btn h2 {
+  color: #94c33d;
+}
+
+.btn {
+  background-color: #94c33d;
+  color: black;
+  border-radius: 30px;
+  text-decoration: none;
+  padding: 10px 10px;
+  font-weight: 800;
+  width: 34%;
+}
+
+.btn:hover {
+  background-color: white;
+}
+
+/* =======page formation======= */
+
+.containerpage2 {
+  display: flex;
+  justify-content: space-between;
+  min-height: 72vh;
+
+}
+
+.gauche,
+.droite {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  padding: 15px;
+  margin: 10px;
+  border: black solid 1px;
+}
+
+/* ========témoignages========= */
+.containerpagetemoignage {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 72vh;
+}
+
+.temoignage {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 20%;
+  padding: 15px;
+  border: black solid 1px;
+  background-color: #94c33d;
+  margin: 20px;
+  gap: 30px;
+}
+
+.texte {
+  line-height: 1.5;
+
+}
+
+/* ======page références====== */
+.contentpage4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 74vh;
+  background-image: url(/images/A2-1920.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  gap: 150px;
+}
+
+/* ========page contactez-nous=========== */
+
+.contentpage5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: auto;
+
+
+}
+
+.contentpage5 h3 {
+  text-align: center;
+
+}
+
+form {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: auto;
+  width: 100%;
+  padding: 0;
+  margin: 10px;
+}
+
+fieldset {
+  min-width: 35%;
+
+}
+
+.formgroup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 5px;
+
+
 }
 
 
 
 
-/* Media Queries Tablette */
-@media screen and (max-width:768px) {
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1200px) {
+  .img_ref {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 80%;
+
+  }
+
+}
+
+
+
+
+
+
+@media screen and (max-width:768px) {
   .container {
     width: 100%;
   }
 
-  .box {
-    width: 45%;
+  .temoignage {
+    flex: 1 1 calc(50% - 16px);
+
   }
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
@@ -126,11 +324,11 @@ label,
 
 
 
-  label::before {
+  nav label::before {
     content: "☰";
   }
 
-  label {
+  nav label {
     display: flex;
     position: absolute;
     top: 10px;
@@ -138,6 +336,8 @@ label,
     color: white;
     cursor: pointer;
     font-size: 30px;
+
+
   }
 
   #toggle:checked~nav label::before {
@@ -155,26 +355,51 @@ label,
     display: flex;
     justify-content: center;
     width: 20vw;
-    background-color: #438048;
+    background-color: #94c33d;
     padding: 10px;
 
+
+  }
+
+  #toggle:checked~nav ul li a {
+    background-color: transparent;
+    border-radius: 0;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+
+  #toggle:checked~nav ul li a:hover {
+    background-color: rgb(204, 198, 198);
+    border-radius: 8px;
+    width: 100%;
+
   }
 
 
-  .box {
+  .temoignage {
     width: 90%;
   }
-}
 
 
-/* Media Queries impression */
-@media print {
-  header {
-    display: none;
+  form {
+    height: 100vh;
   }
 
-  footer {
-    display: none;
+  fieldset {
+
+
+    width: 90%;
+  }
+
+  .formgroup {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .btn {
+    min-width: 34%;
   }
 
 }

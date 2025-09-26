@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contactez-nous</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Roboto:wght@100;400;500;700&family=Shrikhand&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <img src="./images/logo.png" alt="">
+        <input type="checkbox" id="toggle">
+        <nav>
+            <label for="toggle"></label>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="Page3Temoignages.html">Témoignages</a></li>
+                <li><a href="Page4Références.html">Nos références</a></li>
+                <li><a href="Page5Contactez-nous.html">Contactez-nous</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <h1>Contactez-nous</h1><br>
+
+
+
+
+        <div class="contentpage5">
+            <h3>Formulaire</h3>
+
+            <form action="http://bienvu.net/script.php" method="get" class="formulaire">
+
+                <fieldset>
+                    <legend>
+                        <strong>vos coordonnées</strong>
+                    </legend>
+
+                    <div class="formgroup">
+                        <label for="Nom">Votre nom</label>
+                        <input type="text" id="Nom" name="Nom" required>
+                    </div>
+                    <div class="formgroup">
+                        <label for="E-mail">E-mail</label>
+                        <input type="email" id="E-mail" name="E-mail" required>
+                    </div>
+                    <div class="formgroup">
+                        <label for="Telephone">Numéro de téléphone</label>
+                        <input type="text" id="Telephone" name="Telephone" required>
+                    </div>
+
+                </fieldset><br>
+
+
+                <h4>Votre situation</h4>
+
+                <div class="votresituation">
+                    <label for="Emploi">Demandeur d'emploi</label>
+                    <input type="radio" id="Emploi" name="situation" value="Emploi"><br>
+                    <label for="Transition-professionnelle">Salarié en transition professionnelle </label>
+                    <input type="radio" id="Transition-professionnelle" name="situation"
+                        value="Transition-professionnelle"><br>
+                    <label for="Autre">Autre</label>
+                    <input type="radio" id="Autre" name="situation" value="Autre"><br><br>
+                </div>
+
+
+                <h4>Vos modalité d'apprentissage privilégiées </h4>
+
+                <div class="modalite">
+                    <label for="Centre">En centre de formation (Présentiel)</label>
+                    <input type="radio" id="Centre" name="Modalite" value="Centre"><br>
+                    <label for="Distance">100% à distance </label>
+                    <input type="radio" id="Distance" name="Modalite" value="Distance"><br>
+                    <label for="Contrat">En contrat d'alternance avec l'entreprise</label>
+                    <input type="radio" id="Contrat" name="Modalite" value="Contrat"><br>
+                    <label for="Preference">Sans préférence</label>
+                    <input type="radio" id="Preference" name="Modalite" value="Preference"><br><br>
+                </div>
+
+
+
+
+
+                <h4>Votre région d'origine</h4>
+
+                <div class="region">
+                    <select name="region" id="region">
+                        <option value="bretagne">Bretagne </option>
+                        <option value="paysdelaloire">Pays de la Loire</option>
+                        <option value="normandie">Normandie</option>
+                    </select><br><br>
+                </div>
+                <div class="button">
+                    <button type="submit">Envoyer</button>
+                    <button type="reset"> Annulez</button>
+                </div>
+            </form>
+        </div>
+
+
+    </main>
+    <footer>
+        ©2025 AFPA-Tous droit réservés
+    </footer>
+</body>
+
+</html>
