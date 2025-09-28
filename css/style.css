@@ -154,6 +154,7 @@ h1 {
 
 .containerpage2 {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   min-height: 72vh;
 
@@ -163,7 +164,8 @@ h1 {
 .droite {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  line-height: 4;
+  text-align: center;
   flex: 1;
   padding: 15px;
   margin: 10px;
@@ -448,7 +450,7 @@ fieldset {
   }
 
   #toggle:checked~nav ul li a:hover {
-    background-color: rgb(207, 205, 205);
+    background-color: #c7c5c5;
     border-radius: 8px;
     width: auto;
 
